@@ -1,7 +1,0 @@
-.buttons {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    position:absolute;
-    top:20px;
-
-}
