@@ -4,9 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
     <title>Cadastro</title>
+    <style>
+       .center{
+           text-align: center;
+       }
+        
+    </style>
 </head>
-<body>
-    Hello World!
+<body  class="container" >
+    <div class="col-md-12">
+        
+        <h1 class="center">Cadastro</h1>
+        <form class="row g-1" method="POST">
+            <div class="mb-3">
+                <label class="form-label">Nome: </label>
+                <input class="form-control" type="text" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Sobrenome: </label>
+                <input class="form-control" type="text" required>             
+            </div>
+            <div class="mb-3">
+                <label class="form-label">E-mail: </label>
+                <input class="form-control" type="email" placeholder="nome@exemplo.com" required>
+            </div> 
+            <div class="mb-3">
+                <label class="form-label">Senha: </label>
+                <input class="form-control" type="password" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Repetir a Senha: </label>
+                <input class="form-control" type="password" required>
+            </div>
+            <div class="mb-3">    
+                <label class="form-label">Sexo: </label>
+                <select class="form-select" aria-label="Default select example">
+                    <option value="" default>Selecione</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Feminino</option>
+                </select>
+            </div> 
+            <div class="mb-3">
+                <label class="form-label">Data Nascimento: </label>
+                <input type="date">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Preferências </label><br>        
+            </div>
+            <div class="form-check">    
+                <input type="checkbox" class="form-check-input" id="flexCheck1">
+                <label class="form-check-label" for="flexCheck1">Cozidos </label>
+            </div>
+            <div class="form-check">    
+                <input type="checkbox" class="form-check-input" id="flexCheck2">
+                <label class="form-check-label" for="flexCheck2">Assados </label>
+            </div>        
+            <div class="form-check">    
+                <input type="checkbox" class="form-check-input" id="flexCheck3">
+                <label class="form-check-label" for="flexCheck3">Sobremesas </label>
+            </div>
+            <div class="form-check">    
+                <input type="checkbox" class="form-check-input" id="flexCheck4">
+                <label class="form-check-label" for="flexCheck4">Veganos </label>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center"> 
+                        <button type="submit" class="btn btn-primary btn-lg">Cadastrar</button>
+                    </div>
+                </div>
+            </div>        
+        </form>
+    </div>       
 </body>
 </html>
